@@ -29,30 +29,80 @@
 \textbf{\textit{
     \tab Give  definitions  of  locomotion  and  manipulation.  What  are  their shared features and differences?  
 }} \\ \\
+Locomotion is defined as a robot's ability to move itself by exerting force on 
+the environment whereas manipulation is its ability to move objects by 
+exerting force upon them.
+%==============================================================================
 \section*{Question 2}
 \textbf{\textit{
     \tab What are advantages and disadvantages of legged robots?
 }} \\ \\
+Easiest format to see this in would be lists:
+\subsubsection*{Advantages}
+\begin{itemize}
+    \item They can go over more complicated obstacles without 
+        getting stuck (slanted ground, steps, et cetera)
+    \item Causes less damage to terrain than wheeled robots
+\end{itemize}
+\subsubsection*{Disadvantages}
+\begin{itemize}
+    \item Movement speed
+    \item Complexity - actuators and structure are a lot more complicated
+    \item Harder to control - must consider balance and stability
+    \item Less energy efficient due to:
+    \begin{itemize}
+        \item Terrain
+        \item Centre of gravity moves while walking
+        \item Picking up the legs
+    \end{itemize}
+\end{itemize}
+%==============================================================================
 \section*{Question 3}
 \textbf{\textit{
-    \tab What is DOF? If a robot can only move forward and backward, how many DOFs does it have? In most cases, how many DOFs does a robot leg has?
+    \tab What is DOF? If a robot can only move forward and backward, 
+    how many DOFs does it have? In most cases, how many DOFs does a robot leg has?
 }} \\ \\
+DOF stands for \textbf{d}egrees \textbf{o}f \textbf{f}reedom, and its defined by the
+number of joins in each leg. To have a leg that only moves forwards and backwards,
+it would have two joints: this is because its limited to doing a lift and swing motion.
+To move backwards it just swings in the other direction than normal. Most robot legs
+have three joints.
+%==============================================================================
 \section*{Question 4}
 \textbf{\textit{
-    \tab What is a gait of a legged robot? Enumerate all lift and release events of a robot with 4 legs. Give two examples of gaits for such a robot.
+    \tab What is a gait of a legged robot? Enumerate all lift and release 
+    events of a robot with 4 legs. Give two examples of gaits for such a robot.
 }} \\ \\
+Our formula to find how many states there are is $2^k = 2^4 = 16$ states. Instead
+of using full names for the lifts, lets just enumerate it to:
+\begin{itemize}
+    \item Top left = 1
+    \item Top right = 2
+    \item Bottom left = 3
+    \item Bottom right = 4
+\end{itemize}
+Then we can say u for up and d for down. So 1d2d3d4u would translate to four lifted and the rest down
+\begin{enumerate}
+        \item 1d2d3d4d % 1
+
+        \item 1u2d3d4d % 2
+\end{enumerate}
+%==============================================================================
 \section*{Question 5}
 \textbf{\textit{
     \tab Formulate the Monkey and Banana Problem in STRIPS:A monkey is at location A in a lab. There is a box in location C. The monkey wants the bananas that are hanging from the ceiling in location B, but it needs to move the box and climb onto it in order to reach them
 }} \\ \\
+%==============================================================================
 \section*{Question 6}
 \textbf{\textit{
     \tab Evaluate  the  subsumption  architecture  in  terms  of:  support  for modularity, niche targetability, ease of portability to other domains, robustness
 }} \\ \\
+%==============================================================================
 \section*{Question 7}
 \textbf{\textit{
     \tab Describe the Hybrid paradigm in terms of: (a) sensing, acting, and planning, and (b) sensing organization.
 }} \\ \\
+%==============================================================================
 \section*{Question 8}
 \textbf{\textit{
     \tab Look up technical reports on Shakey. Compare Shakey with the Hybrid architectures.  Now  consider  the  possible  impact  of the  radical  increases  in processing power since the 1960’s. Do you agree or disagree with the statement that Shakey would be as capable as any Hybrid if it were built today? Justify your answer.
