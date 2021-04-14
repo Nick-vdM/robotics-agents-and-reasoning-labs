@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+The style file: apalike.bst
+Database file #1: biblio.bib
+Warning--empty journal in reactiveParadigms
+You've used 5 entries,
+            1935 wiz_defined-function locations,
+            500 strings with 4223 characters,
+and the built_in function-call counts, 1440 in all, are:
+= -- 136
+> -- 35
+< -- 6
++ -- 10
+- -- 10
+* -- 89
+:= -- 271
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 29
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 72
+empty$ -- 109
+format.name$ -- 15
+if$ -- 279
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 29
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 61
+stack$ -- 0
+substring$ -- 64
+swap$ -- 9
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 1
+while$ -- 11
+width$ -- 0
+write$ -- 63
+(There was 1 warning)

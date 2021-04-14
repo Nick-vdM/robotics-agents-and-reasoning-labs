@@ -1,0 +1,30 @@
+\begin{thebibliography}{}
+
+\bibitem[Chiappetta, 2020]{threadripper}
+Chiappetta, M. (2020).
+\newblock Amd threadripper 3990x review: A 64-core multithreaded beast
+  unleashed.
+\newblock {\em Hothardware
+  https://web.archive.org/web/20200318200417/https://hothardware.com/reviews/amd-ryzen-threadripper-3990x-cpu-review?page=3}.
+
+\bibitem[Murphy, 2000]{IntroToAI}
+Murphy, R.~R. (2000).
+\newblock {\em Introduction to AI Robotics}.
+\newblock The MIT Press.
+
+\bibitem[Nilsson, 1984]{shakey}
+Nilsson, N.~J. (1984).
+\newblock Shakey the robot.
+\newblock {\em SRI International}, Technical Note 323.
+
+\bibitem[ShippensburgUniversity, 2007]{reactiveParadigms}
+ShippensburgUniversity (2007).
+\newblock Reactive paradigms basics.
+\newblock page~19.
+
+\bibitem[Systems, 1965]{SDS940}
+Systems, S.~D. (1965).
+\newblock Sds 940 time-sharing computer system.
+\newblock {\em SDS}.
+
+\end{thebibliography}

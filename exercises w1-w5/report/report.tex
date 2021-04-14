@@ -98,7 +98,7 @@ trot, canter and gallop. Let's do the walk and gallop.
 There's a couple of things to clarify here before we start. First of all, like
 the example in the slides the hand is not an object in the domain, meaning the 
 monkey shouldn't be either. \\
-\tab Secondly, the goal state is slightly ambigious.
+\tab Secondly, the goal state is slightly ambiguous.
 By the wording of the problem it could mean that the monkey only wants to be able
 to reach them, but for this lets define the operation of grabbing bananas as well
 (therefore the goal is just having the bananas).
@@ -160,7 +160,7 @@ For our case lets say the bananas are an object and the goal is carrying(bananas
         \begin{itemize}
             \item Pre: Box(?X), Location(?Y), MonkeyLocation(?Y), At(?X, ?Y)
             \item Effects+: MonkeyLocation(?X)
-            \item Effects-: MonekyLocation(?Y)
+            \item Effects-: MonkeyLocation(?Y)
         \end{itemize}
     \item PickUpBanana(?X, ?Y, ?Z)
         \begin{itemize}
@@ -173,22 +173,95 @@ For our case lets say the bananas are an object and the goal is carrying(bananas
 %==============================================================================
 \section*{Question 6}
 \textbf{\textit{
-    \tab Evaluate  the  subsumption  architecture  in  terms  of:  support  for modularity, niche targetability, ease of portability to other domains, robustness
+    \tab Evaluate  the  subsumption  architecture  in  terms  of:  support  for modularity, niche targetability, 
+    ease of portability to other domains, robustness
 }} \\ \\
+% Modularity: Does it show good software engineering principles?
+Granted that subsumption is a form of the reactive paradigm and its main architecture revolves around modules, 
+it can be considered as highly modular. This is especially visible as 
+modules are layered and reflects parts of object oriented programming as they have the ability to override, 
+subsume and contain one another (when they're layered). Only thing that's arguably missing is inheritance, but 
+that can probably be simulated by layering as well. 
+\\
+% Niche Targetability: How well does it work for the intended application? Lecture 5 1:20:18 he mentions this
+\tab 
+The niche targetability is high as we can design the system in a very specific way depending on the situation.
+\\
+% Ease of portability to other domains: How well would it work for other applications or other robots? 1:21:55 lecture 5
+\tab Due to the fact that things function in layers, if we tried to adjust an existing robot to a different application
+chances are that it would take too much effort to do. As in if there's a fundamental behaviour in layer 0, or even
+the second last layer, that we want to change it could be a lot of effort. On top of this, adapting to picking
+different actions based on stimulus is challenging
+For this reason its portability is quite low, which is different from a reactive paradigm. \cite{IntroToAI}
+% Robustness: Where is the system vulnerable, and how does it try to reduce that vulnerability
+Overall its robustness to failure is arguable. Sensors failing is usually detected, and can be countered by having 
+more than than the minimum number of sensors. Furthermore, the lower layers will continue to operate when higher ones
+are added, however, the problem arises at high layers. These can only inhibit and suppress lower layers as they actively
+interfere with them, and therefore they can cause undetected errors in the robot. Due to this its robustness is typically
+evaluated as low because there is no inbuilt method to identify these failures. \cite{IntroToAI} \cite{reactiveParadigms}
 
 %==============================================================================
 \section*{Question 7}
 \textbf{\textit{
     \tab Describe the Hybrid paradigm in terms of: (a) sensing, acting, and planning, and (b) sensing organization.
 }} \\ \\
+Basically the planning is done on its own, and the sensing and acting are done together. That's to say that information,
+sensed or cognitive, is put through the plan paradigm and that gives us directives. These directives allow our sense-act
+section to decide what to do when it senses information. Its 'hybrid-ness' is visible through this, as it introduces
+planning from other architectures into a reactive architecture's sensing and acting.
+This assists with the downside of the subsumption model having difficulty adapting different actions 
+to senses that are similar. The specific way P, SA acts is visible in figure \ref{HybridPSA}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{img/PSA-Hybrid.png}
+    \caption{The plan, sense act model for hybrid architecture}
+    \label{HybirdPSA}
+\end{figure}
+\tab The sensing organisation also merges the hierarchical and reactive styles as both planning and
+acting requires the sensory
+information. In the model this causes it to be more complex than the hierarchical one, our global world model can have its
+own sensor and the behaviours can selectively listen to sensors while being able to create virtual sensors.
+An example is visible in figure \ref{sOrg}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{img/sensing-organisation.png}
+    \caption{Sensing organisation of hybrid paradigm. Taken from \cite{IntroToAI}}
+    \label{sOrg}
+\end{figure}
 %==============================================================================
+\newpage
 \section*{Question 8}
 \textbf{\textit{
     \tab Look up technical reports on Shakey. Compare Shakey with the Hybrid
 architectures.  Now  consider  the  possible  impact  of the  radical  increases  in
-processing power since the 1960’s. Do you agree or disagree with the statement that
+ processing power since the 1960’s. Do you agree or disagree with the statement that
 Shakey would be as capable as any Hybrid if it were built today? Justify your answer.
 }} \\ \\
+The overwhelming issue with shakey in terms of its architecture is the fact that it effectively closed its eyes when it was not in
+the sensing stage of its plan-sensing-acting paradigm, which would happen to be majority of the time \cite{IntroToAI}. This is due 
+to both the hardware on board (SDS 940 computer \cite{shakey}) and that the STRIPS paradigm is slow. For reference, a SDS 940 computer
+has a whopping maximum main of 64 kilowords and is old enough that its processing speed was 
+measured by microseconds to add numbers, not hertz. 
+To try to convert it, it takes 77 microseconds on the SDS 940 to a 24 bit floating operation. 
+In other words it has (1/0.000077 = 12987 FLOPS(24 bit)(floating pointer operations per second)) \cite{SDS940}. 
+In comparison an AMD Ryzen Threadripper 3990X has a whopping 13,209GFLOPS, or 13209000000000 FLOPS (32bit) \cite{threadripper}. \\
+
+\tab In terms of the algorithmic speed, the hybrid paradigm has O(n) algorithms \cite{IntroToAI} 
+whereas STRIPS planning varies depending on the situation, but will always be 
+PSPACE-complete; that is, it will never exceed $O(n^k)$ in complexity. \\
+
+\tab So lets say we change our processor to a modern one and change to the hybrid architecture. Now the fact that 
+shakey can only see when it is not thinking is gone, and its planning step is abysmally small - its just the act
+stage that actually matters. At this point Shakey can not actually do anything new at all. He would still
+do the same activities: travel from one place to another, turn a light switch on and off, opening and closing doors, 
+climbing rigid objects and pushings things around \cite{shakey}. To improve shakey to a point where it can actually
+compete with modern robots is more so about how effective he is at interacting with the environment.
+
+\tab Some examples of modern hybrid robots include the DARPA UGV Demo II and Demo III which was a jeep used
+for military reconnaissance - its main component allowing it to do that was the fact that it was a car. 
+\bibliographystyle{apalike}
+\bibliography{biblio}
 
 
 \end{document}

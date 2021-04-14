@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  3 APR 2021 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.19)  14 APR 2021 16:21
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**report.tex
-(./report.tex
+**"/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.tex"
+(/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.tex
 LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14>
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -22,39 +22,30 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
 \f@nch@O@erh=\skip51
@@ -64,14 +55,11 @@ s
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
 \Gm@cnth=\count175
@@ -86,25 +74,21 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layouthoffset=\dimen143
 \Gm@layoutvoffset=\dimen144
 \Gm@dimlist=\toks17
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen145
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen146
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count178
@@ -144,24 +128,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count190
 \l__pdf_internal_box=\box47
-)
-(./report.aux)
+) (/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -178,8 +158,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count191
 \scratchdimen=\dimen154
@@ -194,12 +173,9 @@ LaTeX Font Info:    ... okay on input line 24.
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -236,14 +212,11 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
-
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 31--36
@@ -280,8 +253,7 @@ Package pdftex.def Info: img/gait-walk.png  used on input line 88.
 (pdftex.def)             Requested size: 306.81741pt x 219.38011pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]\OT1/cmr/m/n/10 Figure 2: The sources used are from http://allaboutanimation.
-com/ and
+[]\OT1/cmr/m/n/10 Figure 2: The sources used are from http://allaboutanimation.com/ and
  []
 
 
@@ -289,58 +261,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--110
 
  []
 
-[2 <./img/gait.png> <./img/gait-Walk.png>] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+[2 </home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png> </home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-Walk.png>] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 178--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+LaTeX Warning: Reference `HybridPSA' on page 4 undefined on input line 213.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--214
+
+ []
+
+[4]
+<img/PSA-Hybrid.png, id=29, 275.52937pt x 246.9225pt>
+File: img/PSA-Hybrid.png Graphic file (type png)
+<use img/PSA-Hybrid.png>
+Package pdftex.def Info: img/PSA-Hybrid.png  used on input line 217.
+(pdftex.def)             Requested size: 137.76434pt x 123.46094pt.
+<img/sensing-organisation.png, id=30, 343.2825pt x 341.02406pt>
+File: img/sensing-organisation.png Graphic file (type png)
+<use img/sensing-organisation.png>
+Package pdftex.def Info: img/sensing-organisation.png  used on input line 228.
+(pdftex.def)             Requested size: 171.64082pt x 170.51161pt.
+ [5 </home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png (PNG copy)> </home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 250--253
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
+(/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[]\OT1/cmr/m/n/10 Chiappetta, M. (2020).  Amd thread-rip-per 3990x re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/cmr/m/n/10 view: A 64-core mul-ti-threaded beast un-leashed.  \OT1/cmr/m/it/10 Hothard-ware
  []
 
-[4] (./report.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/cmr/m/it/10 https://web.archive.org/web/20200318200417/https://hothardware.com/reviews/amd-ryzen-threadripper-
+ []
+
+) [6] (/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2981 strings out of 483183
- 39004 string characters out of 5966292
- 278724 words of memory out of 5000000
- 17974 multiletter control sequences out of 15000+600000
- 540895 words of font info for 57 fonts, out of 8000000 for 9000
+ 3008 strings out of 483183
+ 40527 string characters out of 5966292
+ 279832 words of memory out of 5000000
+ 17994 multiletter control sequences out of 15000+600000
+ 541241 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,10n,45p,285b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/university/.texlive2019/texmf-var/fonts/pk/ljfour/j
-knappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-xti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on report.pdf (4 pages, 578355 bytes).
+ 30i,10n,45p,385b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/university/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "/home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.pdf" (6 pages, 632329 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
