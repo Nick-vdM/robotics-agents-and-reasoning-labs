@@ -1,0 +1,4 @@
+---
+float64 relative_distance
+geometry_msgs/Vector3 robot_location
+geometry_msgs/Vector3 target_location
