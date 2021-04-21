@@ -4,45 +4,45 @@ The top-level auxiliary file: report.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--empty journal in reactiveParadigms
-You've used 5 entries,
+You've used 6 entries,
             1935 wiz_defined-function locations,
-            500 strings with 4223 characters,
-and the built_in function-call counts, 1440 in all, are:
-= -- 136
-> -- 35
-< -- 6
-+ -- 10
-- -- 10
-* -- 89
-:= -- 271
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 29
-chr.to.int$ -- 5
-cite$ -- 6
-duplicate$ -- 72
+            510 strings with 4634 characters,
+and the built_in function-call counts, 1597 in all, are:
+= -- 159
+> -- 42
+< -- 7
++ -- 12
+- -- 12
+* -- 97
+:= -- 308
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 35
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 73
 empty$ -- 109
-format.name$ -- 15
-if$ -- 279
+format.name$ -- 18
+if$ -- 303
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 28
-num.names$ -- 15
+missing$ -- 3
+newline$ -- 32
+num.names$ -- 18
 pop$ -- 29
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 36
 quote$ -- 0
-skip$ -- 61
+skip$ -- 63
 stack$ -- 0
-substring$ -- 64
-swap$ -- 9
+substring$ -- 76
+swap$ -- 6
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 34
 warning$ -- 1
-while$ -- 11
+while$ -- 13
 width$ -- 0
-write$ -- 63
+write$ -- 72
 (There was 1 warning)
