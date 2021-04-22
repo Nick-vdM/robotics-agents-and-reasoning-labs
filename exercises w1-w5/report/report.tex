@@ -75,54 +75,86 @@ have three joints.
     \tab What is a gait of a legged robot? Enumerate all lift and release 
     events of a robot with 4 legs. Give two examples of gaits for such a robot.
 }} \\ \\
-Our formula to find how many states there are is $2^k = 2^4 = 16$ states.
+Our formula to find how many states there are is $2^k = 2^4 = 16$ states, so the
+fact that Figure \ref{gait} has 16 states reinforces its validity.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{img/gait.png}
     \caption{Blue means a leg is down and white is the leg is up}
+    \label{gait}
 \end{figure}
 
-Now to depict two gaits of a four legged robot:
+The gaits of a four legged robot is depicted in figure \ref{gait-walk}.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.4\textwidth]{img/gait-walk.png}
+    \caption{The gaits of a 4 legged robot}
+    \label{gait-walk}
 \end{figure}
 \newpage
 %==============================================================================
 \section*{Question 5}
 \textbf{\textit{
-    \tab Formulate the Monkey and Banana Problem in STRIPS:A monkey is at location A in a lab. There is a box in location C. The monkey wants the bananas that are hanging from the ceiling in location B, but it needs to move the box and climb onto it in order to reach them
+    \tab Formulate the Monkey and Banana Problem in STRIPS:A monkey is at
+    location A in a lab. There is a box in location C. The monkey wants the
+    bananas that are hanging from the ceiling in location B, but it needs to
+    move the box and climb onto it in order to reach them 
 }} \\ \\
-%//////////////////////////
-\textbf{States}
+Note that the ways to represent STRIPS varies from source to source, and the
+course content talks about the domain model. Considering the variance in the
+representations of STRIPS, it was decided that doing the way that the course
+content represents a domain model would be the best way. In the end, these
+precise details about how the notation is done should not be a major concern as
+long as it can be understood.
+\subsection*{Predicates}
 \begin{itemize}
-    \item \underline{Initial State} MonkeyLocation(A), MonkeyLevel(low), BoxLocation(C), BananasLocation(B),
+    \item Location(?X) : X is a location
+    \item BoxLocation(?X) : The box is at X
+    \item Bananas(?X): X is bananas
+    \item MonkeyLocation(?X) : Monkey is at X; can be a location or a box (given
+    the monkey is on the box).
+    \item Have(?X) : Monkey has X
+    \item MonkeyOnBox(?X) : Monkey is on the box at location X
+\end{itemize}
+\subsection*{States}
+\begin{itemize}
+    \item \underline{Initial State} Location(A), Location(B), Location(C),
+        Box(box), Bananas(bananas), BoxLocation(C), At(bananas, B),  
+        MonkeyLocation(A) 
     \item \underline{Goal state} Have(bananas)
 \end{itemize}
-
-\subsection*{Actions}
+%//////////////////////////
+\subsection*{World Operators}
 \begin{itemize}
-    \item \_Move(X, Y)\_
+    \item MoveToLocation(?X, ?Y)
         \begin{itemize}
-            \item Pre: Box(X), Location(?Y) HandsFree(), MonkeyNOTOnBox(?X), 
-                MonkeyLocation(?Y), At(X, Y)
-            \item Effects+: Carrying(?X), 
-            \item Effects-: FreeHands(), At(?X, ?Y)
+            \item Pre: Location(?X), Location(?Y), MonkeyLocation(?X)
+            \item Effects+: MonkeyLocation(?Y)
+            \item Effects-: MonkeyLocation(?X)
         \end{itemize}
-    \item \_MoveBox(FromPlace, ToPlace)\_
+    \item MoveBox(?X, ?Y)
         \begin{itemize}
-            \item MonkeyLocation(FromPlace), BoxLocation(FromPlace), MonkeyLevel(low)
-            \item BoxLocation(ToPlace), not BoxLocation(FromPlace), MonkeyLocation(ToPlace), not MonkeyLocation(FromPlace)
+            \item Pre: Location(?X), Location(?Y), MonkeyLocation(?X),
+            BoxLocation(?X)
+            \item Effects+: BoxLocation(?Y), MonkeyLocation(?Y)
+            \item Effects+: BoxLocation(?X), MonkeyLocation(?X)
         \end{itemize}
-    \item \_ClimbUp(Place)\_
+    \item ClimbOnBox(?X)
         \begin{itemize}
-            \item AtLocation(Place), BoxAt(Place), MonkeyLevel(low)
-            \item MonkeyLevel(high), not MonkeyLevel(low)
+            \item Pre: Location(?X), BoxLocation(?X), MonkeyLocation(?X),
+            MonkeyOnBox(FALSE)
+            \item Effects+: MonkeyOnBox(?X)
+            \item Effects-: MonkeyLocation(?X) // this is to avoid situations
+            where the monkey is on the box and tries to move. MonkeyLocation is
+            technically set to null. We also don't need to program when the
+            monkey climbs off the box as that's not necessary for its goal.
         \end{itemize}
-    \item \_TakeBananas(Place)\_
+    \item PickUpBanana(?X, ?Y)
         \begin{itemize}
-            \item MonkeyLocation(Place), BananasLocation(Place), MonkeyLevel(high)
-            \item Have(Bananas)
+            \item Pre: Banana(?X), Location(?Y),
+                MonkeyLocation(?Y), MonkeyOnBox(?Y)
+            \item Effects+: Have(?X)
+            \item Effects-: 
         \end{itemize}
 \end{itemize}
 %==============================================================================
@@ -179,6 +211,7 @@ It's main weakness out of the four is its ease of portability to different uses,
 is generally considered low.
 
 %==============================================================================
+\newpage
 \section*{Question 7}
 \textbf{\textit{
     \tab Describe the Hybrid paradigm in terms of: (a) sensing, acting, and planning, and (b) sensing organization.
@@ -190,7 +223,6 @@ section to decide what to do when it senses information. Its 'hybrid-ness' is vi
 planning from other architectures into a reactive architecture's sensing and acting.
 This assists with the downside of the subsumption model having difficulty adapting different actions 
 to senses that are similar. The specific way P, SA acts is visible in figure \ref{HybridPSA}.
-
 \begin{figure}[ht]
     \centering
     \includegraphics[scale=0.5]{img/PSA-Hybrid.png}
@@ -218,26 +250,64 @@ architectures.  Now  consider  the  possible  impact  of the  radical  increases
  processing power since the 1960’s. Do you agree or disagree with the statement that
 Shakey would be as capable as any Hybrid if it were built today? Justify your answer.
 }} \\ \\
-The overwhelming issue with shakey in terms of its architecture is the fact that
-it effectively closed its eyes when it was not in
-the sensing stage of its plan-sensing-acting paradigm, which would happen to be majority of the time \cite{IntroToAI}. This is due 
-to both the hardware on board (SDS 940 computer \cite{shakey}) and that the STRIPS paradigm is slow. For reference, a SDS 940 computer
-has a whopping maximum main of 64 kilowords and is old enough that its processing speed was 
-measured by microseconds to add numbers, not hertz.  \\
-\tab To try to convert it, it takes 77 microseconds on the SDS 940 to a 24 bit floating operation. 
-In other words it has (1/0.000077 = 12987 FLOPS(24 bit)(floating pointer operations per second)) \cite{SDS940}. 
-On the other hand, an AMD Ryzen Threadripper 3990X has a whopping 13,209GFLOPS, or 13209000000000 FLOPS (32bit) \cite{threadripper}.
-Note that later on Shakey was updated to a PDP-10 \cite{shakey}, but that's still a similar comparison
-that its effectively millions of times slower than today's technology. 
+Shakey's initial model, made in the 1960's was designed using a hierarchical
+paradigm and the second model slightly changed this \cite{shakeyHistory}. As
+such, this question will be split into two sections due to the comparison being
+different between both of these.
+\subsection*{First Model - 1966}
+The overwhelming issue with the first verson of shakey is the fact that
+it effectively went blind when it was not in the sensing stage of its
+plan-sensing-acting paradigm, which would happen to be majority of the time
+\cite{IntroToAI}. This is due to both the hardware on board (SDS 940 computer
+\cite{shakeyHistory}) and that the STRIPS paradigm is slow. For reference, a SDS
+940 computer has a whopping maximum main of 64 kilowords and is old enough that
+its processing speed was measured by microseconds to add numbers, not hertz.  \\
+
+\tab To try to equate this to modern hardware, it takes 77 microseconds on the
+SDS 940 to do a 24 bit floating operation. In other words it has (1/0.000077 =
+12987 FLOPS(24 bit)(floating pointer operations per second)) \cite{SDS940}. 
+On the other hand, an AMD Ryzen Threadripper 3990X has a whopping 13,209GFLOPS,
+or 13209000000000 FLOPS (32bit) \cite{threadripper}. This massive difference
+will allow a modern Shakey to spend next to no time in the planning stage.
 \\
-\tab Not to mention, in terms of the planning algorithmic speed, the hybrid paradigm has O(n) algorithms \cite{IntroToAI} 
+\tab However, in terms of the planning algorithmic speed, the hybrid
+paradigm has O(n) algorithms \cite{IntroToAI}  
 whereas STRIPS planning varies depending on the situation, but will always be 
-PSPACE-complete; that is, it will never exceed $O(n^k)$ in complexity. 
+PSPACE-complete; that is, it will never exceed $O(n^k)$ in complexity. This is
+because hybrid models only plan up to the next stage, whereas a hierarchical
+model plans everything from beginning to end, runs a small section of it, then
+replans - even if it was correct \cite{shakey}.
 \\
-\tab However, even if we manage to keep up with STRIPS's much higher demand for processing, the integral problem with 
-it still exists: its single threaded. A hybrid can see a situation, plan it, and while its acting if it goes wrong 
-it can replan to react to the situation. On the other hand, STRIPS would finish acting out its plan then realise something
-went wrong. For this reason, the STRIPS model would have to be changed to compete with hybrid robots.
+\tab However, even if we manage to keep up with STRIPS's much higher demand for
+processing, the integral problem with it still exists: its single threaded. A
+hybrid can see a situation, plan it, and while its acting if it goes wrong 
+it can replan to react to the situation. On the other hand, STRIPS would finish
+acting out its plan then realise something went wrong. An example is that say
+Shakey is running to the bathroom, but a person walks in front of it - a hybrid
+would instantly be able to react, while Shakey would finish its plan (driving
+into you for a long time) and then realise something is wrong afterwards. For
+this reason, the STRIPS model would have to be changed to compete with hybrid
+robots. 
+\subsection*{Second Model - 1971}
+In the second model, Shakey was upgraded to a PDP-10 and due to this processing
+improvement they changed the model into a layer hierarchical architecture. The
+distinguishing feature of this is its capability to actually see while acting,
+but the fact that its a five layered hierarchical system means it came with five
+times the processing demand \cite{shakey}. In terms of big-O notation, this
+isn't actually a visible change as the number of layers is just multiplied by
+some constant ($O(cn^k) \rightarrow O(n^k)$. Good thing this is comparing it to
+modern hardware which is billions of times faster. \\  
+\tab Depending on the task, the revised Shakey would be equally as functional as a
+hybrid robot. That's to say on an especially simple task it would be able to
+complete it like a hybrid, but if a hybrid model even uses one percent of the
+processor, the layered hierarchical model likely will not be able to handle
+that. If we define capability by the bleeding edge functionalities of robots,
+and the majority of those would use the entire processor if it can, then it
+is not as capable as a hybrid model. \\ \\
+\tab To sum it up, the first version fails to be as capable as a hybrid due to
+its vision and time complexity while the revised version would not be as capable
+because of the time complexity difference between linear and PSPACE-complete's
+worst case.
 \newpage
 
 \bibliographystyle{apalike}

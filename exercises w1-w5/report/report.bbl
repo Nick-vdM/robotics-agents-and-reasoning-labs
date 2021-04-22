@@ -7,6 +7,12 @@ Chiappetta, M. (2020).
 \newblock
   \url{https://web.archive.org/web/20200318200417/https://hothardware.com/reviews/amd-ryzen-threadripper-3990x-cpu-review?page=3}.
 
+\bibitem[Kuipers et~al., 2017]{shakeyHistory}
+Kuipers, B., Feigenbaum, E.~A., Hart, P.~E., and Nilsson, N.~J. (2017).
+\newblock Shakey: From conception to history.
+\newblock
+  \url{https://ai.stanford.edu/~nilsson/OnlinePubs-Nils/General%20Essays/Shakey-aimag-17.pdf}.
+
 \bibitem[Murphy, 2000]{IntroToAI}
 Murphy, R.~R. (2000).
 \newblock Introduction to ai robotics.
