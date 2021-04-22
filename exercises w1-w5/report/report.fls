@@ -1,10 +1,10 @@
-PWD /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report
+PWD /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.tex
-OUTPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.log
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.tex
+OUTPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -91,9 +91,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
-OUTPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
+OUTPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -106,14 +106,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-OUTPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-OUTPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.pdf
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+OUTPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+OUTPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -152,27 +152,26 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.bbl
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.bbl
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.bbl
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/OneDrive/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
-INPUT /home/university/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.out
+INPUT /home/nick/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -182,5 +181,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

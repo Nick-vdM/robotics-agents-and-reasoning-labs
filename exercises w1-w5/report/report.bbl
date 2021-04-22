@@ -9,8 +9,9 @@ Chiappetta, M. (2020).
 
 \bibitem[Murphy, 2000]{IntroToAI}
 Murphy, R.~R. (2000).
-\newblock {\em Introduction to AI Robotics}.
-\newblock The MIT Press.
+\newblock Introduction to ai robotics.
+\newblock
+  \url{https://www.researchgate.net/file.PostFileLoader.html?id=53ad1225d4c118ad118b4705&assetKey=AS%3A272118967668741%401441889625514}.
 
 \bibitem[Nilsson, 1984]{shakey}
 Nilsson, N.~J. (1984).
@@ -21,7 +22,8 @@ Nilsson, N.~J. (1984).
 \bibitem[ShippensburgUniversity, 2007]{reactiveParadigms}
 ShippensburgUniversity (2007).
 \newblock Reactive paradigms basics.
-\newblock page~19.
+\newblock
+  \url{https://web.cs.ship.edu/~djmoon/roboteam/robotics-notes/murphyc4.pdf}.
 
 \bibitem[Systems, 1965]{SDS940}
 Systems, S.~D. (1965).
