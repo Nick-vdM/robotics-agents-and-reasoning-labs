@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -333,81 +333,37 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--72
-
- []
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 <img/gait.png, id=22, 1085.05376pt x 924.45375pt>
 File: img/gait.png Graphic file (type png)
 <use img/gait.png>
-Package pdftex.def Info: img/gait.png  used on input line 82.
+Package pdftex.def Info: img/gait.png  used on input line 84.
 (pdftex.def)             Requested size: 236.01561pt x 201.08118pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
-
- []
-
 <img/gait-walk.png, id=25, 804.00375pt x 905.3825pt>
 File: img/gait-walk.png Graphic file (type png)
 <use img/gait-walk.png>
-Package pdftex.def Info: img/gait-walk.png  used on input line 90.
+Package pdftex.def Info: img/gait-walk.png  used on input line 92.
 (pdftex.def)             Requested size: 188.8096pt x 212.61295pt.
-[2 </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png> </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 102--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--212
-
- []
-
-[3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
+ [2 </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait.png> </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/gait-walk.png>] [3] [4]
 <img/PSA-Hybrid.png, id=59, 275.52937pt x 246.9225pt>
 File: img/PSA-Hybrid.png Graphic file (type png)
 <use img/PSA-Hybrid.png>
-Package pdftex.def Info: img/PSA-Hybrid.png  used on input line 228.
+Package pdftex.def Info: img/PSA-Hybrid.png  used on input line 230.
 (pdftex.def)             Requested size: 137.76434pt x 123.46094pt.
 <img/sensing-organisation.png, id=61, 343.2825pt x 341.02406pt>
 File: img/sensing-organisation.png Graphic file (type png)
 <use img/sensing-organisation.png>
-Package pdftex.def Info: img/sensing-organisation.png  used on input line 240.
+Package pdftex.def Info: img/sensing-organisation.png  used on input line 242.
 (pdftex.def)             Requested size: 171.64082pt x 170.51161pt.
-[5 </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png (PNG copy)> </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 252--257
+ [5 </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/PSA-Hybrid.png (PNG copy)> </e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/img/sensing-organisation.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 260--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--265
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--311
+Underfull \hbox (badness 10000) in paragraph at lines 294--313
 
  []
 
@@ -427,29 +383,29 @@ Underfull \hbox (badness 2020) in paragraph at lines 23--27
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
  [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (/e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 6984 strings out of 483107
- 103649 string characters out of 5964630
- 370378 words of memory out of 5000000
- 21843 multiletter control sequences out of 15000+600000
- 541063 words of font info for 58 fonts, out of 8000000 for 9000
+ 6987 strings out of 483107
+ 103709 string characters out of 5964630
+ 369390 words of memory out of 5000000
+ 21847 multiletter control sequences out of 15000+600000
+ 541951 words of font info for 62 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  34i,10n,45p,330b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/nick/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "/e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.pdf" (7 pages, 276298 bytes).
+ </home/nick/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "/e/OneDrive - Griffith University/3. Third Year/1. Trimester 1/3806ICT - RAAR/Labs/exercises w1-w5/report/report.pdf" (7 pages, 256711 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 156 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

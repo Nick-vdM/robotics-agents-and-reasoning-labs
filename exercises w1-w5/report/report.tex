@@ -10,7 +10,7 @@
 
 \geometry{left = 2.5cm, right=2.5cm, bottom=2.5cm, top=2.5cm}
 
-\title{3806ICT - Week 3 Lab}
+\title{3806ICT - Exercises week 1 $\rightarrow$ 5}
 \author{Nick van der Merwe - s5151332 - nick.vandermerwe@griffithuni.edu.au}
 
 \pagestyle{fancy}
@@ -27,17 +27,19 @@
 
 %==============================================================================
 \section*{Question 1}
-\textbf{\textit{
-    \tab Give  definitions  of  locomotion  and  manipulation.  What  are  their shared features and differences?  
-}} \\ \\
+% \textbf{\textit{
+%     \tab Give  definitions  of  locomotion  and  manipulation.  What  are  their shared features and differences?  
+% }} \\ \\
 Locomotion is defined as a robot's ability to move itself by exerting force on 
 the environment whereas manipulation is its ability to move objects by 
-exerting force upon them.
+exerting force upon them. So their shared feature is that they exert force using
+a mechanism, but their difference is what ends up moving. In locomotion, the
+robot itself moves and in kinematics the other object moves.
 %==============================================================================
 \section*{Question 2}
-\textbf{\textit{
-    \tab What are advantages and disadvantages of legged robots?
-}} \\ \\
+% \textbf{\textit{
+%     \tab What are advantages and disadvantages of legged robots?
+% }} \\ \\
 Easiest format to see this in would be lists:
 \subsubsection*{Advantages}
 \begin{itemize}
@@ -59,10 +61,10 @@ Easiest format to see this in would be lists:
 \end{itemize}
 %==============================================================================
 \section*{Question 3}
-\textbf{\textit{
-    \tab What is DOF? If a robot can only move forward and backward, 
-    how many DOFs does it have? In most cases, how many DOFs does a robot leg has?
-}} \\ \\
+% \textbf{\textit{
+%     \tab What is DOF? If a robot can only move forward and backward, 
+%     how many DOFs does it have? In most cases, how many DOFs does a robot leg has?
+% }} \\ \\
 DOF stands for \textbf{d}egrees \textbf{o}f \textbf{f}reedom, and its defined by the
 number of joins in each leg. To have a leg that only moves forwards and backwards,
 it would have two joints: this is because its limited to doing a lift and swing motion.
@@ -71,10 +73,10 @@ have three joints.
 %==============================================================================
 \newpage
 \section*{Question 4}
-\textbf{\textit{
-    \tab What is a gait of a legged robot? Enumerate all lift and release 
-    events of a robot with 4 legs. Give two examples of gaits for such a robot.
-}} \\ \\
+% \textbf{\textit{
+%     \tab What is a gait of a legged robot? Enumerate all lift and release 
+%     events of a robot with 4 legs. Give two examples of gaits for such a robot.
+% }} \\ \\
 Our formula to find how many states there are is $2^k = 2^4 = 16$ states, so the
 fact that Figure \ref{gait} has 16 states reinforces its validity.
 \begin{figure}[ht]
@@ -94,12 +96,12 @@ The gaits of a four legged robot is depicted in figure \ref{gait-walk}.
 \newpage
 %==============================================================================
 \section*{Question 5}
-\textbf{\textit{
-    \tab Formulate the Monkey and Banana Problem in STRIPS:A monkey is at
-    location A in a lab. There is a box in location C. The monkey wants the
-    bananas that are hanging from the ceiling in location B, but it needs to
-    move the box and climb onto it in order to reach them 
-}} \\ \\
+% \textbf{\textit{
+%     \tab Formulate the Monkey and Banana Problem in STRIPS:A monkey is at
+%     location A in a lab. There is a box in location C. The monkey wants the
+%     bananas that are hanging from the ceiling in location B, but it needs to
+%     move the box and climb onto it in order to reach them 
+% }} \\ \\
 Note that the ways to represent STRIPS varies from source to source, and the
 course content talks about the domain model. Considering the variance in the
 representations of STRIPS, it was decided that doing the way that the course
@@ -159,10 +161,10 @@ long as it can be understood.
 \end{itemize}
 %==============================================================================
 \section*{Question 6}
-\textbf{\textit{
-    \tab Evaluate  the  subsumption  architecture  in  terms  of:  support  for modularity, niche targetability, 
-    ease of portability to other domains, robustness
-}} \\ \\
+% \textbf{\textit{
+%     \tab Evaluate  the  subsumption  architecture  in  terms  of:  support  for modularity, niche targetability, 
+%     ease of portability to other domains, robustness
+% }} \\ \\
 % Modularity: Does it show good software engineering principles?
 There are two perspectives on whether subsumption has good modularity.
 Firstly, its granted hea  subsumption is a form of the reactive 
@@ -213,9 +215,9 @@ is generally considered low.
 %==============================================================================
 \newpage
 \section*{Question 7}
-\textbf{\textit{
-    \tab Describe the Hybrid paradigm in terms of: (a) sensing, acting, and planning, and (b) sensing organization.
-}} \\ \\
+% \textbf{\textit{
+%     \tab Describe the Hybrid paradigm in terms of: (a) sensing, acting, and planning, and (b) sensing organization.
+% }} \\ \\
 
 Basically the planning is done on its own, and the sensing and acting are done together. That's to say that information,
 sensed or cognitive, is put through the plan paradigm and that gives us directives. These directives allow our sense-act
@@ -244,12 +246,12 @@ An example is visible in figure \ref{sOrg}.
 %==============================================================================
 \newpage
 \section*{Question 8}
-\textbf{\textit{
-    \tab Look up technical reports on Shakey. Compare Shakey with the Hybrid
-architectures.  Now  consider  the  possible  impact  of the  radical  increases  in
- processing power since the 1960’s. Do you agree or disagree with the statement that
-Shakey would be as capable as any Hybrid if it were built today? Justify your answer.
-}} \\ \\
+% \textbf{\textit{
+%     \tab Look up technical reports on Shakey. Compare Shakey with the Hybrid
+% architectures.  Now  consider  the  possible  impact  of the  radical  increases  in
+%  processing power since the 1960’s. Do you agree or disagree with the statement that
+% Shakey would be as capable as any Hybrid if it were built today? Justify your answer.
+% }} \\ \\
 Shakey's initial model, made in the 1960's was designed using a hierarchical
 paradigm and the second model slightly changed this \cite{shakeyHistory}. As
 such, this question will be split into two sections due to the comparison being
