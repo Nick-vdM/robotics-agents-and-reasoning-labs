@@ -48,17 +48,18 @@ other two pairs, the only option is taking the knight and lady. As such the
 first trip are those two, one comes back (can be either, its equal), queen and
 king go over as required, and the other first pair crosses back with the torch.
 Finally the two fast pairs come back over.
+\newpage
 \section*{Task 3 - Explaining PAT}
 The first section (lines 4-9) defines the constants using 
-$\#define var \leq value \geq$. Max is the most amount of time allowed
+$\#define\; var\; <value>$. Max is the most amount of time allowed
 KNIGHT is the amount of time it takes for the knight to cross, and so on for
 the people. Following this we define vars (lines 11-15) with 
-$var varName = \leq value \geq$. These are variables
+$var\; varName = <value>$. These are variables
 that can be changed, and these symbolise the side that the
 people are on for each person. \\
 \tab Next we need to define the processes in lines 17-37 
 (usually called models) which has the syntax of 
-$processName() = [condition]actionName{action} -> nextProcess [] ...$
+$processName()\; =\; [condition]actionName\{action\}\; ->\; nextProcess\; [] ...$
 . To explain, processName is the name of the process (in our case
 South()), and condition is a conditional statement to be allowed
 to do the action. Next the actionName is what it prints as 
@@ -66,14 +67,14 @@ the action for record and action is what it actually does. Next
 we define which process to go to after doing this in nextProcess
 and the square brackets essentially functions as a comma between
 actions. \\
-\tab In line 41 we do $\#define goal(conditional);$ which 
+\tab In line 41 we do $\#define\; goal(conditional);$ which 
 defines the conditional
 for when a node is considered succesful which we use in 
-$\#assert processName() reaches goal$ on lines 44-46. Essentially, 
+$\#assert\; processName()\; reaches\; goal$ on lines 44-46. Essentially, 
 this means that the model has a state where a node in the 
 search has a state that satisfies the goal. To expand
 on this we can pick which node to print using 
-$with selection(var)$ in line 46 which picks which node to 
+$with\; selection(var)$ in line 46 which picks which node to 
 print - in our case we want the minimum.\\
 For our output with the minimum time, it looks like this:
 \begin{figure}[ht]
