@@ -1,0 +1,49 @@
+﻿#include "auv_htn.csp";
+
+// (Primitive goal) AUV has gone back to the start point.
+// #define goalAUVReturnHome 
+
+// (Primitive goal) AUV has completed the survey and the survivors are not in the survey area.
+#define goalAUVCompleteSurvey (&& i:{AUVUpBoundry..AUVDownBoundry}@
+	(&& j:{AUVLeftBoundry..AUVRightBoundry}@(world[i][j] == Visited)));		
+
+// (Primitive goal) Rescue signal is sent.
+#define goalRescueSignalSent rescueSignalSent == 1;
+
+// Compound goal (method): either survey is completed OR survivors are found and rescue signal is sent. 
+// We express this in terms of logical relations. 
+// That is, either (the survivors are NOT in the survey region AND the region has been 
+// fully surveyed), OR rescue signal is sent.
+#define goalAUVSuccessfulSurvey 
+	(((&& i:{AUVUpBoundry..AUVDownBoundry}@(posSurvivor[0] != i)) ||
+	  (&& j:{AUVLeftBoundry..AUVRightBoundry}@(posSurvivor[1] != j))) && 
+	 goalAUVCompleteSurvey) || goalRescueSignalSent;
+
+// (Primitive goal) Detected hostile contact.
+#define goalAUVDetectedContact hostileContact == 1;
+
+// Compound goal (method): the survey is finished, it means either a successful survey
+// OR a hostile contact is detected.
+// #define goalAUVSurveyFinished 
+
+// The overall (compound) goal (method): the survey is finished AND the AUV has returned home.
+#define goalOverall goalAUVSurveyFinished && goalAUVReturnHome;
+
+// Translating goals as processes.
+
+RescueSignalSent() = [!goalRescueSignalSent]AUVRun();RescueSignalSent();
+
+DetectedContact() = [!goalAUVDetectedContact]AUVRun();DetectedContact();
+
+CompleteSurvey() = [!goalRescueSignalSent && !goalAUVDetectedContact && !goalAUVCompleteSurvey]
+	AUVRun();CompleteSurvey();
+	
+SurveyFinished() = RescueSignalSent() [] DetectedContact() [] CompleteSurvey();
+
+ReturnedHome() = [!goalAUVReturnHome]AUVRun();ReturnedHome();
+
+OverallGoal() = SurveyFinished();ReturnedHome();
+
+Goal() = OverallGoal();
+
+#assert Goal() reaches goalOverall;

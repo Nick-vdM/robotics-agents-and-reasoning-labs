@@ -1,0 +1,31 @@
+﻿#include "auv_domain.csp";
+
+// This models AUV and USV's movements.
+// i = 0 for moving AUV;
+// i = 1 for moving USV.
+// Boundry is an array for the up, down, left, right boundries for the vehicle.
+// The task Move is the sequence of primitive tasks MoveUp, MoveDown, MoveLeft, MoveRight.
+//Move(i, boundry) = 
+
+// The task AUVSurvey specifies that if hostile contact is not in range (precondition), 
+// then the AUV keeps surveying.
+AUVSurvey() = [(pos[0][0] - pos[1][0]) * (pos[0][0] - pos[1][0]) + 
+			   (pos[0][1] - pos[1][1]) * (pos[0][1] - pos[1][1]) >= USVRange] 
+			   Move(0,AUVBoundry) ; AUVRun();
+
+// The task AUVContact specifies that if hostile contact is in range (precondition),
+// then the AUV detects the contact and moves on.
+// The goal will guide the AUV to move home.			   
+AUVContact() = [(pos[0][0] - pos[1][0]) * (pos[0][0] - pos[1][0]) + 
+			   (pos[0][1] - pos[1][1]) * (pos[0][1] - pos[1][1]) <= USVRange]
+			   AUVDetectContact() ; Move(0,AUVBoundry) ; AUVRun();
+  			   
+// The task AUVRescue specifies that if survivors are found at this point (precondition),
+// rescue them and move on.
+// The goal will guide the AUV to move home.    			   
+//AUVRescue() = 	  
+
+// The task AUVRun model how the AUV runs.
+AUVRun() = AUVSurvey() [] AUVContact() [] AUVRescue();
+
+

@@ -1,0 +1,84 @@
+﻿// This file defines the environment of the AUV simulation.
+
+// The world in this example is visualised below:
+//
+//   0 1 2 3 4 5 
+// 0 x x x
+// 1 x x x
+// 2 x x x
+// 3       + + +
+// 4       + + +
+// 5       + + +
+//
+// Points marked with x are the survey area of the Autonomous Underwater Vehicle (AUV). 
+// Points marked with + are the survey area of a hostile Umanned Surface Vehicle (USV).
+// There may be survivors to be rescued in the AUV's survey area.
+
+#define Unvisited -1;
+#define Visited 0;
+
+// Size of the world.
+#define NoOfRows 6;
+#define NoOfCols 6;
+
+// Boundries of AUV's survey area.
+#define AUVUpBoundry 0;
+#define AUVDownBoundry 2;
+#define AUVLeftBoundry 0;
+#define AUVRightBoundry 2;
+
+hvar AUVBoundry[4]:{0..5} = [AUVUpBoundry, AUVDownBoundry, AUVLeftBoundry, AUVRightBoundry];
+
+// Boundries of USV's survey area.
+// Do it yourself.
+
+hvar USVBoundry[4]:{0..5} = [USVUpBoundry, USVDownBoundry, USVLeftBoundry, USVRightBoundry];
+
+// The range of contact for hostile USV.
+#define USVRange 9;
+
+// The world matrix.
+var world[NoOfRows][NoOfCols]:{Unvisited..Visited} = [Unvisited(NoOfRows * NoOfCols)];
+
+// Initial positions of the AUV and USV.
+// pos[0] is for AUV, pos[1] is for USV.
+// For each vehicle, [0] is the index of the column, [1] is the index of the row.
+var pos[2][2]:{0..5} = [0,0, 
+						4,4];
+
+// The position of survivors in the format [column, row], which is not known initially.
+var posSurvivor[2]:{0..5} = [3,3];
+
+// Whether rescue signal is sent.
+var rescueSignalSent:{0..1} = 0;
+// Whether the hostile USV is within range of contact.
+var hostileContact:{0..1} = 0;
+
+// The battery level of the AUV.
+var batteryLevel:{0..5} = 3;
+
+////// The following section models the task hierarchy.
+
+// The action (primary task) of surfacing and recharge.
+SurfaceRecharge() = [batteryLevel <= 1]auvsurfacerecharge{batteryLevel = 5;} -> Skip;
+
+// Actions (primitive tasks) for the task Move.
+MoveUp(i, boundry) = 
+	[pos[i][0] != boundry[0] && batteryLevel > 1]moveup{pos[i][0] = pos[i][0] - 1;
+	world[pos[i][0]][pos[i][1]] = Visited;}
+	-> Skip;
+
+//MoveDown(i, boundry) = 
+
+//MoveLeft(i, boundry) = 
+
+//MoveRight(i, boundry) = 
+
+	
+// Action (primitive task) for detecting hostile contact.
+AUVDetectContact() = auvcontact{hostileContact = 1} -> Skip;
+
+// Action (primitive task) for rescuing survivors.
+AUVRescueSurvivors() = auvrescue{rescueSignalSent = 1} -> Skip;
+
+//AUVOperators() = 
