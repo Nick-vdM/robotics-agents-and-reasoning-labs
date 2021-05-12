@@ -5,7 +5,11 @@
 // i = 1 for moving USV.
 // Boundry is an array for the up, down, left, right boundries for the vehicle.
 // The task Move is the sequence of primitive tasks MoveUp, MoveDown, MoveLeft, MoveRight.
-//Move(i, boundry) = 
+Move(i, boundry) = MoveUp(i, boundry)
+				[] MoveDown(i, boundry)
+				[] MoveLeft(i, boundry)
+				[] MoveRight(i, boundry)
+				[] SurfaceRecharge();
 
 // The task AUVSurvey specifies that if hostile contact is not in range (precondition), 
 // then the AUV keeps surveying.
@@ -23,7 +27,8 @@ AUVContact() = [(pos[0][0] - pos[1][0]) * (pos[0][0] - pos[1][0]) +
 // The task AUVRescue specifies that if survivors are found at this point (precondition),
 // rescue them and move on.
 // The goal will guide the AUV to move home.    			   
-//AUVRescue() = 	  
+AUVRescue() = [pos[0][0] == posSurvivor[0] && pos[0][1] == posSurvivor[1]] 
+				AUVRescueSurvivors();Move(0, AUVBoundry); AUVRun();
 
 // The task AUVRun model how the AUV runs.
 AUVRun() = AUVSurvey() [] AUVContact() [] AUVRescue();

@@ -27,6 +27,11 @@
 #define AUVLeftBoundry 0;
 #define AUVRightBoundry 2;
 
+#define USVUpBoundry 3;
+#define USVDownBoundry 5;
+#define USVLeftBoundry 3;
+#define USVRightBoundry 5;
+
 hvar AUVBoundry[4]:{0..5} = [AUVUpBoundry, AUVDownBoundry, AUVLeftBoundry, AUVRightBoundry];
 
 // Boundries of USV's survey area.
@@ -44,10 +49,10 @@ var world[NoOfRows][NoOfCols]:{Unvisited..Visited} = [Unvisited(NoOfRows * NoOfC
 // pos[0] is for AUV, pos[1] is for USV.
 // For each vehicle, [0] is the index of the column, [1] is the index of the row.
 var pos[2][2]:{0..5} = [0,0, 
-						4,4];
+						4,3];
 
 // The position of survivors in the format [column, row], which is not known initially.
-var posSurvivor[2]:{0..5} = [3,3];
+var posSurvivor[2]:{0..5} = [3,2];
 
 // Whether rescue signal is sent.
 var rescueSignalSent:{0..1} = 0;
@@ -69,11 +74,20 @@ MoveUp(i, boundry) =
 	-> Skip;
 
 //MoveDown(i, boundry) = 
-
+MoveDown(i, boundry) = 
+	[pos[i][0] != boundry[1] && batteryLevel > 1]movedown{pos[i][0] = pos[i][0] + 1;
+	world[pos[i][0]][pos[i][1]] = Visited;}
+	-> Skip;
 //MoveLeft(i, boundry) = 
-
+MoveLeft(i, boundry) = 
+	[pos[i][1] != boundry[2] && batteryLevel > 1]moveleft{pos[i][1] = pos[i][1] - 1;
+	world[pos[i][0]][pos[i][1]] = Visited;}
+	-> Skip;
 //MoveRight(i, boundry) = 
-
+MoveRight(i, boundry) = 
+	[pos[i][1] != boundry[3] && batteryLevel > 1]moveright{pos[i][1] = pos[i][1] + 1;
+	world[pos[i][0]][pos[i][1]] = Visited;}
+	-> Skip;
 	
 // Action (primitive task) for detecting hostile contact.
 AUVDetectContact() = auvcontact{hostileContact = 1} -> Skip;
@@ -81,4 +95,10 @@ AUVDetectContact() = auvcontact{hostileContact = 1} -> Skip;
 // Action (primitive task) for rescuing survivors.
 AUVRescueSurvivors() = auvrescue{rescueSignalSent = 1} -> Skip;
 
-//AUVOperators() = 
+AUVOperators() = SurfaceRecharge()
+				 [] MoveDown(0, AUVBoundry)
+				 [] MoveLeft(0, AUVBoundry)
+				 [] MoveRight(0, AUVBoundry)
+				 [] MoveUp(0, AUVBoundry)
+				 [] AUVDetectContact()
+				 [] AUVRescueSurvivors();

@@ -1,7 +1,7 @@
 ﻿#include "auv_htn.csp";
 
 // (Primitive goal) AUV has gone back to the start point.
-// #define goalAUVReturnHome 
+#define goalAUVReturnHome pos[0][0] == 0 && pos[0][1] == 0;
 
 // (Primitive goal) AUV has completed the survey and the survivors are not in the survey area.
 #define goalAUVCompleteSurvey (&& i:{AUVUpBoundry..AUVDownBoundry}@
@@ -24,7 +24,7 @@
 
 // Compound goal (method): the survey is finished, it means either a successful survey
 // OR a hostile contact is detected.
-// #define goalAUVSurveyFinished 
+#define goalAUVSurveyFinished goalAUVSuccessfulSurvey || goalAUVDetectedContact;
 
 // The overall (compound) goal (method): the survey is finished AND the AUV has returned home.
 #define goalOverall goalAUVSurveyFinished && goalAUVReturnHome;
