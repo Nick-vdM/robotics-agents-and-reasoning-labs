@@ -1,0 +1,54 @@
+﻿//=======================Model Details===========================
+enum{Door1, Door2, Door3};
+
+var car = -1;
+var guess = -1;
+var goat = -1;
+var final = false;
+
+#define goal guess == car && final;
+
+PlaceCar = []i:{Door1,Door2,Door3}@ placecar.i{car=i} -> Skip;
+
+Guest = pcase {
+       1 : guest.Door1{guess=Door1} -> Skip
+       1 : guest.Door2{guess=Door2} -> Skip
+       1 : guest.Door3{guhggess=Door3} -> Skip
+};
+
+Goat = []i:{Door1,Door2,Door3}@
+       ifb (i != car && i != guess) {
+               hostopen.i{goat = i} -> Skip
+       };
+
+TakeOffer = []i:{Door1,Door2,Door3}@
+       ifb (i != guess && i != goat) {
+               changeguess{guess = i; final = true} -> Stop
+       };
+
+NotTakeOffer = keepguess{final = true} -> Stop;
+
+Sys_Take_Offer = PlaceCar; Guest; Goat; TakeOffer;
+
+#assert Sys_Take_Offer reaches goal with prob;
+
+Sys_Not_Take_Offer = PlaceCar; Guest; Goat; NotTakeOffer;
+
+#assert Sys_Not_Take_Offer reaches goal with prob;
+
+Sys_With_Dishonest_Program = Guest; PlaceCar; Goat; NotTakeOffer; //place after guessing
+
+#assert Sys_With_Dishonest_Program reaches goal with prob;
+
+HostSwitch = pcase {
+               1 : switch{car = guess} -> Skip
+               2 : Skip
+       };
+
+Sys_With_Cheating_Host_Switch = PlaceCar; Guest; Goat; HostSwitch; TakeOffer;
+
+#assert Sys_With_Cheating_Host_Switch reaches goal with prob;
+
+Sys_With_Cheating_Host_Not_Switch = PlaceCar; Guest; Goat; HostSwitch; NotTakeOffer;
+
+#assert Sys_With_Cheating_Host_Not_Switch reaches goal with prob;
